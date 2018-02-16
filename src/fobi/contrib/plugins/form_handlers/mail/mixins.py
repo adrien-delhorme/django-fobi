@@ -63,7 +63,7 @@ class MailHandlerMixin(object):
                         else value
 
             label = field_name_to_label_map.get(key, key)
-            rendered_data.append('{0}: {1}\n'.format(
+            rendered_data.append(u'{0}: {1}\n'.format(
                 safe_text(label), safe_text(cleaned_data[key]))
             )
         return rendered_data
@@ -84,7 +84,7 @@ class MailHandlerMixin(object):
 
         send_mail(
             safe_text(self.data.subject),
-            "{0}\n\n{1}".format(
+            u"{0}\n\n{1}".format(
                 safe_text(self.data.body),
                 ''.join(rendered_data)
             ),

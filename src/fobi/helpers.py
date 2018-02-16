@@ -29,7 +29,7 @@ from nine.versions import DJANGO_GTE_1_8, DJANGO_GTE_1_10
 
 # import simplejson as json
 
-from six import text_type, PY3
+from six import text_type
 
 from .constants import (
     SUBMIT_VALUE_AS_MIX,
@@ -107,10 +107,7 @@ def safe_text(text):
 
     :return str:
     """
-    if PY3:
-        return force_text(text, encoding='utf-8')
-    else:
-        return force_text(text, encoding='utf-8').encode('utf-8')
+    return force_text(text, encoding='utf-8')
 
 
 def lists_overlap(sub, main):
