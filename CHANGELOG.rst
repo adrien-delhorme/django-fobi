@@ -15,8 +15,24 @@ are used for versioning (schema follows below):
   0.3.4 to 0.4).
 - All backwards incompatible changes are mentioned in this document.
 
+0.12.19
+-------
+2018-02-21
+
+- Make it possible to sort on plugin ``name`` instead of ``uid``.
+
+0.12.18
+-------
+2018-02-19
+
+- Improved form element add drop-down order.
+- Add initial migrations for DjangoCMS integration app.
+- Add French translations.
+- Implemented styles for ``bleach`` within ``content_richtext`` plugin.
+- Documentation improvements.
+
 0.12.17
---------
+-------
 2018-02-14
 
 - Security fixes in db_store plugin.
@@ -24,7 +40,7 @@ are used for versioning (schema follows below):
 - If CKEditor is installed, use it (rich text) for success page message.
 
 0.12.16
---------
+-------
 2018-01-21
 
 .. note::
@@ -49,7 +65,7 @@ are used for versioning (schema follows below):
 - Introduce a form_id block. The following templates were affected.
 
 0.12.15
---------
+-------
 2018-01-17
 
 - Minor clean up of HTML templates (in some templates
@@ -61,14 +77,14 @@ are used for versioning (schema follows below):
 - Optionally limit file extensions for file upload element
 
 0.12.14
---------
+-------
 2018-01-10
 
 - Minor clean up of HTML templates (unused classes removed).
 - Nicer captcha (simple captcha) for bootstrap3 and foundation5 themes.
 
 0.12.13
---------
+-------
 2018-01-09
 
 .. note::
